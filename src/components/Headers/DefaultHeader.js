@@ -9,11 +9,18 @@ import {  Button,
           FormGroup
         } from "reactstrap";
 
+import { Link } from "react-scroll";
 // core components
 
-function DefaultHeader() {
+function DefaultHeader(props) {
   let pageHeader = React.createRef();
+  const [dest, setDest] = React.useState("");
 
+  function changeDest() {
+    props.getDestination(dest)
+    console.log(dest || "kosi")
+  }
+  
   React.useEffect(() => {
     if (window.innerWidth > 991) {
       const updateScroll = () => {
@@ -49,12 +56,25 @@ function DefaultHeader() {
                     defaultValue=""
                     placeholder="Do you have a place in mind?"
                     type="text"
+                    onChange={(e) => setDest(e.target.value)}
                   ></Input>
                   </Col>
                   <Col lg="1">
-                  <Button className="btn-round" color="info" type="button" size="md" style={{margin: "0px"}}>
+                  {/*<Button className="btn-round" color="info" type="button" size="md" style={{margin: "0px"}} onClick = {changeDest}>
                 Search
-              </Button>
+              </Button>*/}
+              <Button className="btn-round" color="info" type="button" size="md" style={{margin: "0px"}} onClick = {changeDest}>
+              <Link
+                  onClick = {changeDest}
+                  activeClass="active"
+                  to="destinations"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+              > Search
+                </Link>
+            </Button>
               </Col>
               <Col lg="1"></Col>
               </Row>

@@ -23,6 +23,7 @@ import TouristSites from "./TouristSites"
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
+  const [Destination, setDestination] = React.useState(false);
   const idanre = "../../assets/img/tourist/tourism-1_idanre_hills.jpg"
   React.useEffect(() => {
     document.body.classList.add("landing-page");
@@ -39,7 +40,7 @@ function LandingPage() {
     <>
       <DefaultNavBar />
       <div className="wrapper">
-        <DefaultHeader />
+        <DefaultHeader getDestination={setDestination}/>
         <div className="section section-about-us">
           <Container>
             <Row>
@@ -97,9 +98,9 @@ function LandingPage() {
           </Container>
         </div>
         <div className="section section-team text-center">
-          <Container>
-            <h2 className="title">Suggested Destinations</h2>
-            <TouristSites siteImage={idanre}/>
+          <Container id="destinations">
+                  <h2 className="title">Suggested Destinations{Destination ? ` in ${Destination}` : ``}</h2>
+            <TouristSites siteImage={idanre} destination={Destination}/>
           </Container>
         </div>
         <div className="section section-contact-us text-center">
