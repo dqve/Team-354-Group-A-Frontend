@@ -9,7 +9,7 @@ import "./assets/css/font-awesome.min.css";
 
 //components
 import PageLoader from "./components/loaders/pageLoader";
-import IndexApp from "./pages/App";
+import IndexApp from "./pages";
 
 const App = () => {
     const [loading, setLoading] = React.useState(false);
