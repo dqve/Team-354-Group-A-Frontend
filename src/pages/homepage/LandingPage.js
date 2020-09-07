@@ -10,13 +10,7 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip,
-  Card, 
-  CardImg, 
-  CardText, 
-  CardBody,
-  CardTitle, 
-  CardSubtitle
+  UncontrolledTooltip
 } from "reactstrap";
 
 // core components
