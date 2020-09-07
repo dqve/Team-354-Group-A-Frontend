@@ -47,12 +47,12 @@ function DefaultHeader(props) {
         ></div>
         <div className="content-center">
           <Container>
-            <h1 className="title">Easy Tourism at your Fingertips</h1>
+            <h2 className="title" style={window.innerWidth > 425 ? {fontSize: "50px"} : {fontSize: "20px"}}>Easy Tourism at your Fingertips</h2>
             <div className="text-center">
                 <FormGroup>
                   <Row>
-                  <Col lg="2"></Col>
-                    <Col lg="7">
+                  <Col sm="0" md="0" lg="2"></Col>
+                    <Col sm="9" md="9" lg="6">
                   <Input
                     defaultValue=""
                     placeholder="Do you have a place in mind?"
@@ -60,10 +60,7 @@ function DefaultHeader(props) {
                     onChange={(e) => setDest(e.target.value)}
                   ></Input>
                   </Col>
-                  <Col lg="1">
-                  {/*<Button className="btn-round" color="info" type="button" size="md" style={{margin: "0px"}} onClick = {changeDest}>
-                Search
-              </Button>*/}
+                  <Col sm="3" md="3" lg="2">
               <Button className="btn-round" color="info" type="button" size="md" style={{margin: "0px"}} onClick = {changeDest}>
               <Link
                   onClick = {changeDest}
@@ -77,7 +74,7 @@ function DefaultHeader(props) {
                 </Link>
             </Button>
               </Col>
-              <Col lg="1"></Col>
+              <Col sm="0" md="0" lg="1"></Col>
               </Row>
                 </FormGroup>
             </div>
