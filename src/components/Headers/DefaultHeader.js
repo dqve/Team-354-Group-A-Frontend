@@ -13,7 +13,6 @@ import {  Button,
 
 function DefaultHeader() {
   let pageHeader = React.createRef();
-  const [rightFocus, setRightFocus] = React.useState(false);
 
   React.useEffect(() => {
     if (window.innerWidth > 991) {
