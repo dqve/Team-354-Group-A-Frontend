@@ -98,7 +98,7 @@ function LandingPage() {
         </div>
         <div className="section section-team text-center">
           <Container>
-            <h2 className="title">Here is our team</h2>
+            <h2 className="title">Suggested Destinations</h2>
             <TouristSites siteImage={idanre}/>
           </Container>
         </div>
