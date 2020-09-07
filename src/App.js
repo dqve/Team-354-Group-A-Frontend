@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
 
 // styles
 import "./assets/css/bootstrap.min.css";
@@ -8,23 +7,18 @@ import "./assets/demo/demo.css?v=1.4.0";
 import "./assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 import "./assets/css/font-awesome.min.css";
 
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import HomePage from './pages/homepage/HomePage';
-import PageNotFound from './pages/pagenotfound/PageNotFound';
-import LandingPage from "./pages/homepage/LandingPage";
+//components
+import PageLoader from "./components/loaders/pageLoader";
+import IndexApp from "./pages/App";
 
+const App = () => {
+    const [loading, setLoading] = React.useState(false);
 
+    React.useEffect(() => {
+        setTimeout(() => setLoading(true), 500)
+      });
 
-const App = () => (
-    <div className="">
-        <Switch>
-            <Route exact path="/" component={HomePage}/>
-            <Route exact path="/landing" component={LandingPage}/>
-            <Route component={PageNotFound}/>
-        </Switch>
-        <ToastContainer autoClose={3000} hideProgressBar />
-    </div>
-)
+    return loading ? <IndexApp /> : <PageLoader />
+}
 
 export default App;
