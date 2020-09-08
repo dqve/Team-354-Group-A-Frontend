@@ -14,9 +14,9 @@ import {
 } from "reactstrap";
 
 // core components
-import DefaultNavBar from "../../components/navbars/DefaultNavBar.js";
-import DefaultHeader from "../../components/headers/DefaultHeader.js";
-import DefaultFooter from "../../components/footers/DefaultFooter.js";
+import DefaultNavBar from "../../components/navbars/DefaultNavBar";
+import DefaultHeader from "../../components/headers/DefaultHeader";
+import DefaultFooter from "../../components/footers/DefaultFooter";
 import IndexCarousel from "../../components/carousels/IndexCarousel"
 import TouristSites from "./TouristSites"
 
