@@ -47,7 +47,7 @@ function DefaultHeader(props) {
         ></div>
         <div className="content-center">
           <Container>
-            <h2 className="title" style={window.innerWidth > 425 ? {fontSize: "50px"} : {fontSize: "20px"}}>Easy Tourism at your Fingertips</h2>
+            <h2 className="title" style={window.innerWidth > 425 ? {fontSize: "50px"} : {fontSize: "25px"}}>Easy Tourism at your Fingertips</h2>
             <div className="text-center">
                 <FormGroup>
                   <Row>
