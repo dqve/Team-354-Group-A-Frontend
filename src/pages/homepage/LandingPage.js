@@ -14,11 +14,11 @@ import {
 } from "reactstrap";
 
 // core components
-import DefaultNavBar from "../../components/navbars/DefaultNavBar.js";
-import DefaultHeader from "../../components/headers/DefaultHeader.js";
-import DefaultFooter from "../../components/footers/DefaultFooter.js";
-import IndexCarousel from "../../components/carousels/IndexCarousel"
-import TouristSites from "./TouristSites"
+import DefaultNavBar from "../../components/Navbars/DefaultNavBar";
+import DefaultHeader from "../../components/Headers/DefaultHeader";
+import DefaultFooter from "../../components/Footers/DefaultFooter";
+import IndexCarousel from "../../components/carousels/IndexCarousel";
+import TouristSites from "./TouristSites";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);

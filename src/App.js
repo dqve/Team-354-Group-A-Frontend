@@ -1,24 +1,34 @@
-import React from 'react';
+import React from "react"
 
 // styles
-import "./assets/css/bootstrap.min.css";
-import "./assets/scss/now-ui-kit.scss?v=1.4.0";
-import "./assets/demo/demo.css?v=1.4.0";
-import "./assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
-import "./assets/css/font-awesome.min.css";
+import "./assets/css/bootstrap.min.css"
+import "./assets/scss/now-ui-kit.scss?v=1.4.0"
+import "./assets/demo/demo.css?v=1.4.0"
+import "./assets/demo/nucleo-icons-page-styles.css?v=1.4.0"
+import "./assets/css/font-awesome.min.css"
 
-//components
-import PageLoader from "./components/loaders/pageLoader";
-import IndexApp from "./pages";
+// components
+import PageLoader from "./components/loaders/pageLoader"
+import IndexApp from "./pages/IndexApp"
+
+// const App = () => (
+//   <div className="container-fluid">
+//     <Switch>
+//       <Route exact path="/" component={HomePage} />
+//       <Route component={PageNotFound} />
+//     </Switch>
+//     <ToastContainer autoClose={3000} hideProgressBar />
+//   </div>
+// )
 
 const App = () => {
-    const [loading, setLoading] = React.useState(false);
+  const [loading, setLoading] = React.useState(false)
 
-    React.useEffect(() => {
-        setTimeout(() => setLoading(true), 500)
-      });
+  React.useEffect(() => {
+    setTimeout(() => setLoading(true), 500)
+  })
 
-    return loading ? <IndexApp /> : <PageLoader />
+  return loading ? <IndexApp /> : <PageLoader />
 }
 
-export default App;
+export default App
