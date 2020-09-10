@@ -1,9 +1,4 @@
 import React from "react"
-import { Route, Switch } from "react-router-dom"
-import { ToastContainer } from "react-toastify"
-import "react-toastify/dist/ReactToastify.css"
-import HomePage from "./pages/homepage/HomePage"
-import PageNotFound from "./pages/pagenotfound/PageNotFound"
 
 // styles
 import "./assets/css/bootstrap.min.css"
@@ -14,7 +9,7 @@ import "./assets/css/font-awesome.min.css"
 
 // components
 import PageLoader from "./components/loaders/pageLoader"
-import IndexApp from "./pages"
+import IndexApp from "./pages/IndexApp"
 
 // const App = () => (
 //   <div className="container-fluid">
