@@ -136,6 +136,21 @@
             }
         }
 
+        &.imageright{
+            z-index: 2;
+            height: auto;
+            margin-top: 25%;
+            
+            img {
+                size: cover;
+                object-fit: "cover"
+            }
+
+            + h3.title{
+                margin-top: auto;
+            }
+        }
+
         &.image-left{
             z-index: 1;
         }

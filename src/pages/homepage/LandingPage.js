@@ -25,6 +25,15 @@ function LandingPage() {
   const [lastFocus, setLastFocus] = React.useState(false);
   const [Destination, setDestination] = React.useState(false);
   const idanre = "../../assets/img/tourist/tourism-1_idanre_hills.jpg"
+  const freeStyle = {
+    position: "relative",
+    left: "-5%",
+  }
+  const leftFreeStyle = {
+    position: "relative",
+    left: "20%",
+    backgroundImage: "url(" + require("../../assets/img/qr_tourist_3.jpg") + ")",
+  }
   React.useEffect(() => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
@@ -54,16 +63,12 @@ function LandingPage() {
               </Col>
             </Row>
             <div className="separator separator-primary"></div>
-            <div className="section-story-overview">
+            <div className="section-story-overview content-center text-center">
               <Row>
                 <Col md="6">
                   <div
                     className="image-container image-left"
-                    style={{
-                      backgroundImage:
-                        "url(" + require("../../assets/img/qr_tourist_3.jpg") + ")",
-                    }}
-                  >
+                    style={ window.innerWidth > 768 ? leftFreeStyle : {backgroundImage: "url(" + require("../../assets/img/qr_tourist_3.jpg") + ")",} }>
                     <p className="blockquote blockquote-info">
                     “Tourism is a a journey of discovery and wonder, The trill of the unknown comes with utter satisfaction.”<br></br>
                       <br></br>
@@ -73,11 +78,12 @@ function LandingPage() {
                 </Col>
                 <Col md="5" sm="12" >
                   <div
-                    className="image-container image-right" id="carousel" 
+                    className="image-container imageright" id="carousel" style={window.innerWidth > 768 ? freeStyle : {}}
                   >
                     <IndexCarousel/>
                   </div>
-                  <div className="content-center text-center">
+                  <div className="content-center text-center" style={window.innerWidth > 768 ? freeStyle : {}}>
+                    <br/>
                     <h3>
                       Scan a QR Code for enhanced discovery
                     </h3>

@@ -1,13 +1,12 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
 
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import HomePage from './homepage/HomePage';
-import PageNotFound from './pagenotfound/PageNotFound';
-import LandingPage from "./homepage/LandingPage";
-import PageLoader from "../components/loaders/pageLoader";
-
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
+import HomePage from './homepage/HomePage'
+import PageNotFound from './pagenotfound/PageNotFound'
+import LandingPage from "./homepage/LandingPage"
+import PageLoader from "../components/loaders/pageLoader"
 
 
 const IndexApp = () => (
@@ -22,4 +21,4 @@ const IndexApp = () => (
         </div>
 )
 
-export default IndexApp;
+export default IndexApp
