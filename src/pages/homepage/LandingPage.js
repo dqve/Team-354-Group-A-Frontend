@@ -31,7 +31,7 @@ function LandingPage() {
   }
   const leftFreeStyle = {
     position: "relative",
-    left: "20%",
+    left: "17.5%",
     backgroundImage: "url(" + require("../../assets/img/qr_tourist_3.jpg") + ")",
   }
   React.useEffect(() => {

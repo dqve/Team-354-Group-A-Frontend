@@ -2,7 +2,11 @@
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { Container,
+  UncontrolledTooltip,
+  NavItem,
+  NavLink, } from "reactstrap";
+  import { FaTwitter, FaInstagram, FaFacebookF } from 'react-icons/fa';
 
 function DefaultFooter() {
   return (
@@ -38,13 +42,39 @@ function DefaultFooter() {
             </li>
           </ul>
         </nav>
-        <div className="copyright" id="copyright">
-          © {new Date().getFullYear()}, Designed and Developed by{" "}
+        
+        <div className="content-center text-center nav">
+          <ul>
+            <li>
             <a
-                href="#"
+                href="#twitter"
+                target="_blank"
+                id="twitter-tooltip"
               >
-            SDG Team 354
-          </a>
+                <FaTwitter size="1.5em"/>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#facebbook"
+                target="_blank"
+                id="facebook-tooltip"
+              >
+                <FaFacebookF size="1.5em" />
+              </a>
+              <a
+                href="#instagram"
+                target="_blank"
+                id="instagram-tooltip"
+              >
+                <FaInstagram size="1.5em" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="copyright" id="copyright">
+        &copy; {new Date().getFullYear()}, Designed and Developed by{" "}
+            <a href="#"> SDG Team 354</a>
           .
         </div>
       </Container>
