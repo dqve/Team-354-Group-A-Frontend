@@ -97,6 +97,7 @@ function LandingPage() {
                         alt="..."
                         className="img-fluid img-raised"
                         src={require("../../assets/img/tourist/qr_code.png")}
+                        onClick={() => setModal(true)}
                       ></img>
                       <UncontrolledTooltip target="#scan_qr">
                       Click to scan QR Code
