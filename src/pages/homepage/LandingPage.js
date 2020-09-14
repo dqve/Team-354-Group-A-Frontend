@@ -14,16 +14,18 @@ import {
 } from "reactstrap";
 
 // core components
-import DefaultNavBar from "../../components/navbars/DefaultNavBar";
-import DefaultHeader from "../../components/headers/DefaultHeader";
-import DefaultFooter from "../../components/footers/DefaultFooter";
+import DefaultNavBar from "../../components/navbars/DefaultNavBar"
+import DefaultHeader from "../../components/headers/DefaultHeader"
+import DefaultFooter from "../../components/footers/DefaultFooter"
 import IndexCarousel from "../../components/carousels/IndexCarousel"
 import TouristSites from "./TouristSites"
+import QrScanner from "../qrscanner";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   const [Destination, setDestination] = React.useState(false);
+  const [modal, setModal] = React.useState(false);
   const idanre = "../../assets/img/tourist/tourism-1_idanre_hills.jpg"
   const freeStyle = {
     position: "relative",
@@ -47,10 +49,12 @@ function LandingPage() {
   }, []);
   return (
     <>
-      <DefaultNavBar />
+      <DefaultNavBar getModal={setModal}/>
       <div className="wrapper">
         <DefaultHeader getDestination={setDestination}/>
+
         <div className="section section-about-us">
+          <QrScanner modal={modal} setModal={setModal}/>
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">

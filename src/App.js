@@ -6,6 +6,7 @@ import "./assets/scss/now-ui-kit.scss?v=1.4.0"
 import "./assets/demo/demo.css?v=1.4.0"
 import "./assets/demo/nucleo-icons-page-styles.css?v=1.4.0"
 import "./assets/css/font-awesome.min.css"
+import "./pages/qrscanner/style.css"
 
 //components
 import PageLoader from "./components/loaders/pageLoader"

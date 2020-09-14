@@ -8,6 +8,7 @@ import HomePage from './homepage/HomePage'
 import PageNotFound from './pagenotfound/PageNotFound'
 import LandingPage from "./homepage/LandingPage"
 import PageLoader from "../components/loaders/pageLoader"
+import Test from "./qrscanner/test"
 
 
 const IndexApp = () => (
@@ -16,6 +17,7 @@ const IndexApp = () => (
                 <Route exact path="/" component={HomePage}/>
                 <Route exact path="/landing" component={LandingPage}/>
                 <Route exact path="/loader" component={PageLoader}/>
+                <Route exact path="/test" component={Test}/>
                 <Route component={PageNotFound}/>
             </Switch>
             <ToastContainer autoClose={3000} hideProgressBar />

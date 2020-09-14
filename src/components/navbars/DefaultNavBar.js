@@ -19,9 +19,14 @@ import {
   UncontrolledTooltip,
 } from "reactstrap";
 
-function DefaultNavBar() {
+function DefaultNavBar(props) {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
+  
+  function changeModal() {
+    props.getModal(true)
+  }
+
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
@@ -107,9 +112,9 @@ function DefaultNavBar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#scan"
-                >
-                  <p className="">Scan QR-Code &nbsp;</p>
+                  href="#"
+                  onClick={changeModal}
+                >Scan QR-Code &nbsp;
                   <BiScan size="2em" />
                 </NavLink>
               </NavItem>
@@ -121,4 +126,4 @@ function DefaultNavBar() {
   );
 }
 
-export default DefaultNavBar;
+export default DefaultNavBar
