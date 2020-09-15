@@ -24,7 +24,7 @@
  * Copyright 2012-2013 Mattia Larentis
  * http://www.apache.org/licenses/LICENSE-2.0
  */
-.bootstrap-switch {
+ .bootstrap-switch {
   display: inline-block;
   direction: ltr;
   cursor: pointer;
@@ -4234,7 +4234,10 @@ img {
     margin-bottom: 50px; }
   .page-header.page-header-small {
     min-height: 60vh;
-    max-height: 440px; }
+    max-height: 475px; }
+    .page-header.page-header-smaller {
+      min-height: 30vh;
+      max-height: 200px; }
   .page-header:before {
     background-color: rgba(0, 0, 0, 0.3); }
   .page-header > .container {
@@ -5951,6 +5954,9 @@ td.rdtYear:hover {
 .page-header.page-header-small {
   min-height: 60vh;
   max-height: 640px; }
+  .page-header.page-header-smaller {
+    min-height: 30vh;
+    max-height: 200px; }
 
 @media screen and (max-width: 991px) {
   .sidebar-collapse .navbar-collapse:before {

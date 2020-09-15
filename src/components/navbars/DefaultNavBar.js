@@ -61,16 +61,16 @@ function DefaultNavBar(props) {
         <Container>
          <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
-              target="_blank"
               id="navbar-brand"
             >
+              <NavLink to="/landing" tag={Link}>
               <img src={require("../../assets/img/Logo.png")} 
               style={{
                 maxWidth: "75px"
               }}
               alt="E-Tourism"
               />
+              </NavLink>
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
               Tourism on the go
@@ -96,7 +96,7 @@ function DefaultNavBar(props) {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink to="#" tag={Link}>
+                <NavLink to="/tourist-sites" tag={Link}>
                   Checkout Sites
                 </NavLink>
               </NavItem>
