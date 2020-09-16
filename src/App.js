@@ -19,7 +19,7 @@ const App = () => {
         setTimeout(() => setLoading(true), 500)
       })
 
-    return loading ? <IndexApp /> : <PageLoader />
+  return loading ? <IndexApp /> : <PageLoader />
 }
 
 export default App
