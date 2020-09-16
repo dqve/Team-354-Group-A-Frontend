@@ -29,16 +29,30 @@ function DefaultNavBar(props) {
 
   React.useEffect(() => {
     const updateNavbarColor = () => {
-      if (
-        document.documentElement.scrollTop > 399 ||
-        document.body.scrollTop > 399
-      ) {
-        setNavbarColor("");
-      } else if (
-        document.documentElement.scrollTop < 400 ||
-        document.body.scrollTop < 400
-      ) {
-        setNavbarColor("navbar-transparent");
+      if(!props.limit){
+        if (
+          document.documentElement.scrollTop > 399 ||
+          document.body.scrollTop > 399
+        ) {
+          setNavbarColor("");
+        } else if (
+          document.documentElement.scrollTop < 400 ||
+          document.body.scrollTop < 400
+        ) {
+          setNavbarColor("navbar-transparent");
+        }
+      }else{
+        if (
+          document.documentElement.scrollTop > 199 ||
+          document.body.scrollTop > 199
+        ) {
+          setNavbarColor("");
+        } else if (
+          document.documentElement.scrollTop < 200 ||
+          document.body.scrollTop < 200
+        ) {
+          setNavbarColor("navbar-transparent");
+        }
       }
     };
     window.addEventListener("scroll", updateNavbarColor);
@@ -62,15 +76,15 @@ function DefaultNavBar(props) {
          <div className="navbar-translate">
             <NavbarBrand
               id="navbar-brand"
+              to="/landing" tag={Link}
             >
-              <NavLink to="/landing" tag={Link}>
               <img src={require("../../assets/img/Logo.png")} 
               style={{
                 maxWidth: "75px"
               }}
               alt="E-Tourism"
               />
-              </NavLink>
+              
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
               Tourism on the go
