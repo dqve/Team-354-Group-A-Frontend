@@ -76,12 +76,12 @@ function IndexCarousel() {
                   onExited={onExited}
                   key={item.src}
                 >
-                  <img src={item.src} alt={item.altText} />
+                  <img src={item.src} alt={item.altText} style={{height: "inherit", objectFit: "cover"}}/>
                   <div className="carousel-caption d-none d-md-block">
                     <h5>{item.caption}</h5>
                   </div>
                 </CarouselItem>
-              );
+              )
             })} 
             <a
               className="carousel-control-prev"

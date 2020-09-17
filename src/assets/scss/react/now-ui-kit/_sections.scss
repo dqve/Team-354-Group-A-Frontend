@@ -12,4 +12,8 @@
     min-height: 60vh;
     max-height: 640px;
   }
+  &.page-header-smaller{
+    min-height: 30vh;
+    max-height: 340px;
+  }
 }

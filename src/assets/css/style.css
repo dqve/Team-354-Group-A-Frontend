@@ -1,0 +1,175 @@
+
+/* QR ANIMATIONS AND STYLES -- START */
+
+.qr .svg{
+    position: absolute;
+    top: 25%;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+
+.sucvg{
+    position: relative;
+    top: 0;
+    margin: 0;
+    margin-bottom: 5em;
+    padding: 0;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+.sucvg svg{
+    margin: 0;
+    padding: 0;
+}
+
+.suctext{
+    animation: suctext 3s ease-in-out 3s infinite alternate;
+
+}
+
+#Line_1 {
+    animation: Line_1 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes Line_1 {
+    from {
+      transform: translate(2235.5px, 211.5px);
+      opacity: 1;
+    }
+    to {
+      transform: translate(2235.5px, 811.5px);
+      opacity: 0.75;
+    }
+  }
+
+  
+  .animation-ctn{
+    text-align:center;
+    margin-top:5em;
+  }
+  
+      @-webkit-keyframes checkmark {
+      0% {
+          stroke-dashoffset: 100px
+      }
+  
+      100% {
+          stroke-dashoffset: 200px
+      }
+  }
+  
+  @-ms-keyframes checkmark {
+      0% {
+          stroke-dashoffset: 100px
+      }
+  
+      100% {
+          stroke-dashoffset: 200px
+      }
+  }
+  
+  @keyframes checkmark {
+      0% {
+          stroke-dashoffset: 100px
+      }
+  
+      100% {
+          stroke-dashoffset: 0px
+      }
+  }
+  
+  @-webkit-keyframes checkmark-circle {
+      0% {
+          stroke-dashoffset: 480px
+     
+      }
+  
+      100% {
+          stroke-dashoffset: 960px;
+        
+      }
+  }
+  
+  @-ms-keyframes checkmark-circle {
+      0% {
+          stroke-dashoffset: 240px
+      }
+  
+      100% {
+          stroke-dashoffset: 480px
+      }
+  }
+  
+  @keyframes checkmark-circle {
+      0% {
+          stroke-dashoffset: 480px 
+      }
+  
+      100% {
+          stroke-dashoffset: 960px
+      }
+  }
+  
+  @keyframes colored-circle { 
+      0% {
+          opacity:0
+      }
+  
+      100% {
+          opacity:100
+      }
+  }
+  
+  /* other styles */
+  /* .svg svg {
+      display: none
+  }
+   */
+  .inlinesvg .svg svg {
+      display: inline
+  }
+  
+  /* .svg img {
+      display: none
+  } */
+  
+  .icon--order-success svg polyline {
+      -webkit-animation: checkmark 0.25s ease-in-out 1.25s backwards;
+      animation: checkmark 0.25s ease-in-out 1.25s backwards
+  }
+  
+  .icon--order-success svg circle {
+      -webkit-animation: checkmark-circle 1s ease-in-out backwards;
+      animation: checkmark-circle 1s ease-in-out backwards;
+  }
+  .icon--order-success svg circle#colored {
+      -webkit-animation: colored-circle 1.1s ease-in-out 0.7s backwards;
+      animation: colored-circle 1.1s ease-in-out 0.7s backwards;
+  } 
+
+  /* QR ANIMATIONS AND STYLES -- END */
+
+  /* RATINGS -- START */
+  .rating-option{
+      visibility: hidden;
+      cursor: pointer;
+  }
+
+  .rating-image{
+      cursor: pointer;
+  }
+
+  .seperator-light {
+      height: 20px;
+  }
+  /* RATINGS -- END */
+
+  .buttonStyles {
+    padding: "0px";
+    margin: "0px";
+    color: "black";
+    font-size: "10px";
+    display: "flex";
+}
