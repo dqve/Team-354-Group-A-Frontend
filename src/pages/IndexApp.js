@@ -14,8 +14,8 @@ import TouristSiteList from "../pages/sites";
 const IndexApp = () => (
         <div className="">
             <Switch>
-                <Route exact path="/" component={HomePage}/>
-                <Route exact path="/landing" component={LandingPage}/>
+                <Route exact path="/old" component={HomePage}/>
+                <Route exact path="/" component={LandingPage}/>
                 <Route exact path="/loader" component={PageLoader}/>
                 <Route exact path="/tourist-sites" component={ TouristSiteList } />
                 <Route exact path="/test" component={Test}/>
