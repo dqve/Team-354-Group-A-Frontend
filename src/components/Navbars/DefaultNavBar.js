@@ -119,7 +119,7 @@ function DefaultNavBar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink to="#" tag={Link}>
+                <NavLink to="/list-of-tourist-sites" tag={Link}>
                   Checkout Sites
                 </NavLink>
               </NavItem>
