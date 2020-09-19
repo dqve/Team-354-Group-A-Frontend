@@ -37,6 +37,11 @@
       max-height: 440px;
   }
 
+  &.page-header-smaller{
+    min-height: 30vh;
+    max-height: 240px;
+}
+
   &:before{
       background-color: rgba(0,0,0,.3);
   }
@@ -133,6 +138,21 @@
 
             + h3.title{
                 margin-top: 120px;
+            }
+        }
+
+        &.imageright{
+            z-index: 2;
+            height: auto;
+            margin-top: 25%;
+            
+            img {
+                size: cover;
+                object-fit: "cover"
+            }
+
+            + h3.title{
+                margin-top: auto;
             }
         }
 

@@ -14,17 +14,28 @@ import {
 } from "reactstrap";
 
 // core components
-import DefaultNavBar from "../../components/Navbars/DefaultNavBar";
-import DefaultHeader from "../../components/Headers/DefaultHeader";
-import DefaultFooter from "../../components/Footers/DefaultFooter";
-import IndexCarousel from "../../components/carousels/IndexCarousel";
-import TouristSites from "./TouristSites";
+import DefaultNavBar from "../../components/navbars/DefaultNavBar"
+import DefaultHeader from "../../components/headers/DefaultHeader"
+import DefaultFooter from "../../components/footers/DefaultFooter"
+import IndexCarousel from "../../components/carousels/IndexCarousel"
+import TouristSites from "./TouristSites"
+import QrScanner from "../qrscanner";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   const [Destination, setDestination] = React.useState(false);
+  const [modal, setModal] = React.useState(false);
   const idanre = "../../assets/img/tourist/tourism-1_idanre_hills.jpg"
+  const freeStyle = {
+    position: "relative",
+    left: "-5%",
+  }
+  const leftFreeStyle = {
+    position: "relative",
+    left: "17.5%",
+    backgroundImage: "url(" + require("../../assets/img/qr_tourist_3.jpg") + ")",
+  }
   React.useEffect(() => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
@@ -38,10 +49,12 @@ function LandingPage() {
   }, []);
   return (
     <>
-      <DefaultNavBar />
+      <DefaultNavBar getModal={setModal}/>
       <div className="wrapper">
         <DefaultHeader getDestination={setDestination}/>
+
         <div className="section section-about-us">
+          <QrScanner modal={modal} setModal={setModal}/>
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
@@ -54,16 +67,12 @@ function LandingPage() {
               </Col>
             </Row>
             <div className="separator separator-primary"></div>
-            <div className="section-story-overview">
+            <div className="section-story-overview content-center text-center">
               <Row>
                 <Col md="6">
                   <div
                     className="image-container image-left"
-                    style={{
-                      backgroundImage:
-                        "url(" + require("../../assets/img/qr_tourist_3.jpg") + ")",
-                    }}
-                  >
+                    style={ window.innerWidth > 768 ? leftFreeStyle : {backgroundImage: "url(" + require("../../assets/img/qr_tourist_3.jpg") + ")",} }>
                     <p className="blockquote blockquote-info">
                     “Tourism is a a journey of discovery and wonder, The trill of the unknown comes with utter satisfaction.”<br></br>
                       <br></br>
@@ -73,11 +82,12 @@ function LandingPage() {
                 </Col>
                 <Col md="5" sm="12" >
                   <div
-                    className="image-container image-right" id="carousel" 
+                    className="image-container imageright" id="carousel" style={window.innerWidth > 768 ? freeStyle : {}}
                   >
                     <IndexCarousel/>
                   </div>
-                  <div className="content-center text-center">
+                  <div className="content-center text-center" style={window.innerWidth > 768 ? freeStyle : {}}>
+                    <br/>
                     <h3>
                       Scan a QR Code for enhanced discovery
                     </h3>
@@ -87,6 +97,7 @@ function LandingPage() {
                         alt="..."
                         className="img-fluid img-raised"
                         src={require("../../assets/img/tourist/qr_code.png")}
+                        onClick={() => setModal(true)}
                       ></img>
                       <UncontrolledTooltip target="#scan_qr">
                       Click to scan QR Code
