@@ -31,7 +31,7 @@ function Filters () {
                 </label>
                 <br />
                 <label htmlFor="customer-rating-4" className="rating-image z-depth-0 py-0">
-                <Ratings className="rating waves-light mb-0 waves-effect waves-light rating-image" index={4}/>
+                <Ratings className="rating-image" index={4}/>
                 <input id="customer-rating-4" className="filter-option rating-option" type="checkbox" rating="4" />
                 
                 </label>

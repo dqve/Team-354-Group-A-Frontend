@@ -40,18 +40,12 @@ function TouristSiteList() {
           <div className="container">
           <BreadCrumb links={[{name:"Tourist Site", link:"/tourist-sites"}]}/>
           <div className="section">
-            {/* Grid row */}
             <Row>
-
-              {/* Grid column */}
               <Col className="md-4">
                 <Filters />
               </Col>
-              {/*Grid column*/}
-
-              {/*Grid column*/}
               <Col className="md-8">
-
+                
               </Col>
             </Row>
             </div>
