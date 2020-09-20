@@ -11,7 +11,7 @@ import DefaultNavBar from "../../components/navbars/DefaultNavBar";
 import DefaultFooter from "../../components/footers/DefaultFooter";
 import SitesHeader from "../../components/headers/SitesHeader"
 import Filters from "./Filters"
-import BreadCrumb from "../../components/breadcrumbs"
+import BreadCrumb from "../../components/breadcrumbs";
 //import "../../assets/demo/mdb.min.js"
 //import "../../assets/css/mdb-pro.min.css"
 import "../../assets/css/mdb.ecommerce.min.css"

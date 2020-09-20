@@ -115,6 +115,11 @@ function DefaultNavBar(props) {
                 </NavLink>
               </NavItem>
               <NavItem>
+                <NavLink to="/list-of-tourist-sites" tag={Link}>
+                  Sites
+                </NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink href="#">
                   Checkout Hotels
                 </NavLink>
