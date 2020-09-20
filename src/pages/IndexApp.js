@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css"
 import PageNotFound from './pagenotfound/PageNotFound'
 import LandingPage from "./homepage/LandingPage"
 import PageLoader from "../components/loaders/pageLoader"
-import TouristStream from "../components/touristsites/TouristStream"
+import TouristLists from "../components/touristsites/TouristLists"
 import Header from "../components/headers/DefaultHeader";
 import Footer from "../components/footers/DefaultFooter"
 import Test from "./qrscanner/test"
@@ -18,7 +18,7 @@ const IndexApp = () => (
       <Header />
       <Switch>
         <Route exact path="/" component={LandingPage} />
-        <Route path="/list-of-tourist-sites" component={TouristStream} />
+        <Route path="/list-of-tourist-sites" component={TouristLists} />
         <Route exact path="/tourist-sites" component={TouristSiteList} />
         <Route exact path="/test" component={Test}/>
         <Route exact path="/loader" component={PageLoader} />

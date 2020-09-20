@@ -7,7 +7,7 @@ const BreadCrumb = ({links}) => {
     let result 
     result = links.length > 1? links.map((each, index) => <><NavLink to={`${each.link}`} key={index} >{each.name}</NavLink> <b> / </b></>) : links.map((each, index) => <NavLink to={`${each.link}`} key={index} >{each.name}</NavLink> )
 
-    return <div> <NavLink to="/"> <BsHouseFill /> Home</NavLink> <b> / </b>{ result }</div>
+    return <div style={{paddingTop: '30px',}}> <NavLink to="/"> <BsHouseFill /> Home</NavLink> <b> / </b>{ result }</div>
 
 }
 
