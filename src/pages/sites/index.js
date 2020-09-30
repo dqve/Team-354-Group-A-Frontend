@@ -32,9 +32,9 @@ function TouristSiteList() {
   }, []);
   return (
     <>
-      <DefaultNavBar limit={true}/>
+      {/* <DefaultNavBar limit={true}/> */}
         <div className="wrapper">
-          <SitesHeader />
+          {/* <SitesHeader /> */}
           <div className="separator separator-primary seperator-light"></div>
           
           <div className="container">

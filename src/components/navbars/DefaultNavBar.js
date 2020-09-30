@@ -1,15 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-//import { FaTwitter, FaInstagram, FaFacebookF } from 'react-icons/fa';
 import { BiScan } from "react-icons/bi";
 
 // reactstrap components
 import {
   Collapse,
-  /*DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,*/
   NavbarBrand,
   Navbar,
   NavItem,
@@ -76,7 +71,7 @@ function DefaultNavBar(props) {
          <div className="navbar-translate">
             <NavbarBrand
               id="navbar-brand"
-              to="/landing" tag={Link}
+              to="/" tag={Link}
             >
               <img src={require("../../assets/img/Logo.png")} 
               style={{
@@ -110,13 +105,8 @@ function DefaultNavBar(props) {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink to="/tourist-sites" tag={Link}>
-                  Checkout Sites
-                </NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink to="/list-of-tourist-sites" tag={Link}>
-                  Sites
+                  Checkout Sites
                 </NavLink>
               </NavItem>
               <NavItem>

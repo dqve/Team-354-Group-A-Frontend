@@ -49,9 +49,9 @@ function LandingPage() {
   }, []);
   return (
     <>
-      <DefaultNavBar getModal={setModal}/>
+      {/* <DefaultNavBar getModal={setModal}/> */}
       <div className="wrapper">
-        <DefaultHeader getDestination={setDestination}/>
+        {/* <DefaultHeader getDestination={setDestination}/> */}
 
         <div className="section section-about-us">
           <QrScanner modal={modal} setModal={setModal}/>
@@ -179,7 +179,7 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <DefaultFooter />
+        {/* <DefaultFooter /> */}
       </div>
     </>
   );
