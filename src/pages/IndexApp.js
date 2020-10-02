@@ -11,6 +11,7 @@ import Header from "../components/headers/index";
 import DefaultNavBar from "../components/navbars/DefaultNavBar"
 import Footer from "../components/footers/DefaultFooter"
 import Test from "./qrscanner/test"
+import QrScanner from "./qrscanner"
 import TouristSiteList from "./sites";
 
 const IndexApp = () => {
@@ -29,6 +30,7 @@ const IndexApp = () => {
                 <Route exact path="/loader" component={PageLoader} />
                 <Route component={PageNotFound} />
             </Switch>
+            <QrScanner modal={modal} setModal={setModal}/>
             <Footer />
             <ToastContainer autoClose={3000} hideProgressBar />
             </div>

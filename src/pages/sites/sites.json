@@ -1,0 +1,24 @@
+[
+    {
+        "name":"Ibeno Beach",
+        "tags": ["Beach","Resort", "Dance", "Drink", "Eat", "Explore nature", "Make friends", "Play", "Swim"],
+        "category": ["adventure"],
+        "rating": "5",
+        "conditions": ["modern","leisure"],
+        "about": {
+            "location": "Ibeno, Akwa Ibom State",
+            "description": ["A blissful destination for tourists stretched over 45km on a sand bank in Ibeno lies the Ibeno Beach, a little haven for leisure seekers. The roaring waves, spots for sunbathing, unpolluted foliage of the mangrove forest, cool breeze from the water and a lush surrounding give this destination an unimaginable allure for tourists.","Ibeno beach is highly rated because of its peaceful and safe surroundings. It is the most popular beach in Akwa Ibom. Although Ibeno is now a popular tourist atttraction because of its beach, the area has some history too. Ibeno was the landing site for one of the most successful christian missions in Nigeria - the Qua Iboe christian mission from Scotland which arrived in the early 20th century. Relics of that missionary expedition also attract tourists to the area. In 2013, the federal government constructed the Ibeno bridge to attract tourists and improve other economic activities in the area."],
+            "pictures": ["http://www.travelstart.com.ng/blog/wp-content/uploads/2015/01/IMG-20111014-00033.jpg"],
+            "ammenities": ["Swimming Pool", "Restaurant", "Bar/Lounge"]
+        },
+        "info": {
+            "safety": "As ExxonMobil operational headquarters is at Qua Iboe terminal, Ibeno, seasoned guards patrol the area 24/7 to keep visitors safe and to ensure orderliness.",
+            "to-do": "Tourists can enjoy a stroll along the beach, play beach soccer, also have fun at water sports and boating.",
+            "to-bring": "Before heading to Ibeno beach here are some things to go along with; Flip flops, sun screen, face cap, swim wear, head gear, sports wear, a camera to take pictures with the view of the beach.",
+            "best-features": "The beach itself is a must see as it is the longest beach in Africa. The beach has a bridge which was built by the federal government.",
+            "visit-when": "The best time to visit is during the weekend, public holidays or during festive periods.",
+            "common-visitors": "Most people you will find here are tourists, families, couples, class groups, fun lovers.",
+            "why-visit": "To relax after a long week at the office, for family bonding."
+        }
+    }
+]
