@@ -7,9 +7,7 @@ import {
 } from "reactstrap";
 
 // core components
-import DefaultNavBar from "../../components/navbars/DefaultNavBar";
 import DefaultFooter from "../../components/footers/DefaultFooter";
-import SitesHeader from "../../components/headers/SitesHeader"
 import Filters from "./Filters"
 import BreadCrumb from "../../components/breadcrumbs";
 //import "../../assets/demo/mdb.min.js"

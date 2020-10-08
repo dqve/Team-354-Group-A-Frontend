@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Row, Col } from "reactstrap";
 import idanreImage from "../../assets/img/tourist/tourism-1_idanre_hills.jpg";
 import TouristTile from "./TouristTile";

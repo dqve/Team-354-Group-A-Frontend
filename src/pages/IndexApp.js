@@ -17,13 +17,16 @@ import TouristSiteList from "./sites";
 const IndexApp = () => {
   
   const [modal, setModal] = React.useState(false);
+  const [Destination, setDestination] = React.useState(false);
     return (
         <Router>
             <div>
             <DefaultNavBar getModal={setModal}/>
-            <Header />
+            <Header getDestination={setDestination}/>
             <Switch>
-                <Route exact path="/" component={LandingPage} />
+                <Route exact path="/"
+                    render={(props) => ( <LandingPage {...props} Destination={Destination} /> )}
+                />
                 <Route path="/list-of-tourist-sites" component={TouristLists} />
                 <Route exact path="/tourist-sites" component={TouristSiteList} />
                 <Route exact path="/test" component={Test}/>

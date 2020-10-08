@@ -3,23 +3,18 @@ import { useLocation } from 'react-router-dom'
 import DefaultHeader from "./DefaultHeader"
 import SiteHeader from "./SitesHeader"
 
-const Header = () => {
+const Header = ({getDestination}) => {
 
     const location = useLocation()
 
     switch(location.pathname) {
         case "/list-of-tourist-sites":
             return <SiteHeader />
-            break;
         case "/tourist-sites":
             return <SiteHeader />
-            break;
         default:
-            return <DefaultHeader />
+            return <DefaultHeader getDestination={getDestination} />
     }
 }
-
-
-
 
 export default Header;
